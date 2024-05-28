@@ -1,0 +1,23 @@
+#my-popover{
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 0.25rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    color: #212529;
+    font-size: 1rem;
+    max-width: 276px;
+    padding: 1rem;
+    position: absolute;
+    z-index: 1000;
+}
+
+#my-popover::backdrop{
+    /*background-color: rgba(0, 0, 0, 0.5); Esto lo oscurece el fondo*/ 
+    backdrop-filter: blur(3px); /*Esto pone el fondo borroso*/
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+}
